@@ -1,0 +1,58 @@
+# Mock data
+
+data = [
+    {
+        "src_ip": "192.168.1.100",
+        "dst_ip": "8.8.8.8",
+        "src_port": 50000,
+        "dst_port": 80,
+        "protocol": "TCP",
+        "packets": 10,
+        "bytes": 2048,
+    },
+    {
+        "src_ip": "192.168.1.101",
+        "dst_ip": "8.8.4.4",
+        "src_port": 50001,
+        "dst_port": 53,
+        "protocol": "UDP",
+        "packets": 20,
+        "bytes": 4096,
+    },
+    {
+        "src_ip": "192.168.1.102",
+        "dst_ip": "8.8.8.8",
+        "src_port": 50002,
+        "dst_port": 80,
+        "protocol": "TCP",
+        "packets": 30,
+        "bytes": 6144,
+    },
+    {
+        "src_ip": "192.168.1.100",
+        "dst_ip": "8.8.4.4",
+        "src_port": 50003,
+        "dst_port": 53,
+        "protocol": "UDP",
+        "packets": 40,
+        "bytes": 8192,
+    },
+    {
+        "src_ip": "192.168.1.102",
+        "dst_ip": "8.8.8.8",
+        "src_port": 50002,
+        "dst_port": 80,
+        "protocol": "TCP",
+        "packets": 50,
+        "bytes": 10240,
+    },
+    {
+        "src_ip": "192.168.1.100",
+        "dst_ip": "8.8.4.4",
+        "src_port": 50003,
+        "dst_port": 53,
+        "protocol": "UDP",
+        "packets": 60,
+        "bytes": 12288,
+    },
+]

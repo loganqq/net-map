@@ -14,16 +14,13 @@ font = pygame.font.Font(None, 30)
 
 
 class Sprite(pygame.sprite.Sprite):
-    def __init__(self, color, height, width) -> None:
+    def __init__(self) -> None:
         super().__init__()
 
-        self.image = pygame.Surface([width, height])
-        self.image.fill((167, 255, 100))
-        self.image.set_colorkey((255, 100, 98))
+        self.image = pygame.image.load("./assets/pc.png")
+        self.smaller_img = pygame.transform.scale(self.image, (50, 50))
 
-        pygame.draw.rect(self.image, color, pygame.Rect(0, 0, width, height))
-
-        self.rect = self.image.get_rect()
+        self.rect = self.smaller_img.get_rect()
 
 
 # create a dictionary to store the connections
@@ -40,9 +37,9 @@ for flow in data:
         connections[dst_ip].append(src_ip)
 
 # create a sprite object
-object_ = Sprite((255, 0, 0), 20, 30)
+object_ = Sprite()
 object_.rect.x = 200
-object_.rect.y = 300
+object_.rect.y = 200
 
 all_sprites_list = pygame.sprite.Group(object_)
 
